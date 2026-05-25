@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Jagan Pragallapati | Portfolio - Computer Science & Full Stack Developer</title>
+    <meta name="description" content="Technical portfolio of Jagan Pragallapati, a Computer Science Student, Full Stack Developer, and AI Enthusiast pursuing B.Tech at IIIT Sri City and BS at IIT Madras.">
+    <meta name="keywords" content="Jagan Pragallapati, Portfolio, Software Engineer, Full Stack Developer, AI, IIIT Sri City, IIT Madras, DR-Carys, PathCarys, PlayCarys">
+    <meta name="author" content="Jagan Pragallapati">
+    
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jagan Pragallapati | Portfolio">
+    <meta property="og:description" content="Computer Science Student | Full Stack Developer | AI Enthusiast">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== LOADING SCREEN ==================== -->
+    <div id="loader" class="loader-container">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="bracket">&lt;</span><span class="logo-name">JP</span><span class="bracket">/&gt;</span>
+            </div>
+            <div class="loader-bar-bg">
+                <div class="loader-bar-fill"></div>
+            </div>
+            <p class="loader-text">Loading Developer Space...</p>
+        </div>
+    </div>
+
+    <!-- ==================== BACKGROUND PARTICLES ==================== -->
+    <div class="background-wrapper">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+        <div class="particles-container" id="particles"></div>
+    </div>
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <header class="navbar-header" id="navbar">
+        <nav class="nav-container">
+            <a href="#home" class="nav-brand" id="nav-logo-link">
+                <span class="logo-accent">&lt;</span>JP<span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <div class="hamburger-menu" id="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu-list">
+                <li class="nav-item"><a href="#home" class="nav-link active-link" id="link-home">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link" id="link-about">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link" id="link-education">Education</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+                <li class="nav-item"><a href="assets/images/Jagan_Resume_Draft.pdf" target="_blank" rel="noopener noreferrer" class="nav-link" id="link-resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+
+        <!-- 1. HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <p class="hero-intro-tag text-gradient">Hello World, my name is</p>
+                    <h1 class="hero-title reveal-fade">Jagan Pragallapati</h1>
+                    <h2 class="hero-subtext">
+                        I am a <span id="typewriter" class="text-glow"></span><span class="typewriter-cursor">|</span>
+                    </h2>
+                    <p class="hero-description reveal-fade">
+                        Computer Science student at IIIT Sri City and Data Science student at IIT Madras. 
+                        I build responsive, full-stack web applications and implement smart solutions using AI and Machine Learning.
+                    </p>
+                    <div class="hero-cta-buttons reveal-fade">
+                        <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+                            <span>View Projects</span>
+                            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <a href="assets/images/Jagan_Resume_Draft.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-hero-resume">
+                            <span>View Resume</span>
+                            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-outline" id="btn-hero-contact">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal-fade">
+                    <div class="avatar-ring-container">
+                        <div class="glow-ring glow-ring-1"></div>
+                        <div class="glow-ring glow-ring-2"></div>
+                        <div class="glow-ring glow-ring-3"></div>
+                        <div class="profile-avatar-placeholder">
+                            <span class="avatar-logo">&lt;JP/&gt;</span>
+                            <div class="avatar-pulse"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mouse Scroll Indicator -->
+            <div class="scroll-indicator" id="scroll-prompt">
+                <a href="#about" class="mouse-scroll" aria-label="Scroll down to About section">
+                    <span class="mouse-wheel"></span>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- 2. ABOUT SECTION -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-gradient reveal-up">About Me</h2>
+                <div class="about-content-grid">
+                    
+                    <div class="about-card glassmorphism reveal-left">
+                        <div class="card-glow-element"></div>
+                        <h3 class="card-subtitle text-glow">Professional Background</h3>
+                        <p class="about-text">
+                            Hello! I am <strong>PRAGALLAPATI J N SAI VEERA LAKSHMANKUMAR</strong>, a passionate developer and double-degree student who thrives at the intersection of core computer science, modern web engineering, and machine learning. I am pursuing both degrees in parallel:
+                        </p>
+                        <ul class="about-education-list">
+                            <li>
+                                <div class="edu-icon-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                                </div>
+                                <span><strong>B.Tech in Computer Science & Engineering</strong> at IIIT Sri City</span>
+                            </li>
+                            <li>
+                                <div class="edu-icon-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                                </div>
+                                <span><strong>BS in Data Science & Applications</strong> at IIT Madras</span>
+                            </li>
+                        </ul>
+                        <div style="margin-top: 1.5rem; display: flex; justify-content: flex-start;">
+                            <a href="assets/images/Jagan_Resume_Draft.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 8px 18px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 8px;">
+                                <span>View Full Resume</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="about-card glassmorphism reveal-right">
+                        <div class="card-glow-element"></div>
+                        <h3 class="card-subtitle text-glow">My Focus & Ambition</h3>
+                        <p class="about-text">
+                            I enjoy building highly functional applications that bridge complex backend architectures with stunning, user-friendly frontend designs. My engineering interests span:
+                        </p>
+                        <div class="focus-tags-grid">
+                            <span class="focus-tag">AI & Machine Learning</span>
+                            <span class="focus-tag">Full Stack Development</span>
+                            <span class="focus-tag">Data Science & Analytics</span>
+                            <span class="focus-tag">Software Architecture</span>
+                            <span class="focus-tag">Problem Solving</span>
+                        </div>
+                        <p class="about-text-small">
+                            Whether designing a disaster management pathfinder or scaling an online multiplayer manager, I focus on clean structure, modular logic, and responsive layouts.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 3. SKILLS SECTION -->
+        <section id="skills" class="skills-section section-padding section-bg-alt">
+            <div class="container">
+                <h2 class="section-title text-gradient reveal-up">Skills & Expertise</h2>
+                
+                <div class="skills-grid">
+                    
+                    <!-- Programming Languages -->
+                    <div class="skills-category glassmorphism reveal-up">
+                        <div class="skills-header">
+                            <svg class="skills-cat-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            <h3 class="skills-cat-title">Programming</h3>
+                        </div>
+                        <div class="skills-list-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Web & Backend Development -->
+                    <div class="skills-category glassmorphism reveal-up">
+                        <div class="skills-header">
+                            <svg class="skills-cat-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            <h3 class="skills-cat-title">Web & Backend</h3>
+                        </div>
+                        <div class="skills-list-tags">
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">NodeJS</span>
+                            <span class="skill-tag">NestJS</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">VueJS</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skills-category glassmorphism reveal-up">
+                        <div class="skills-header">
+                            <svg class="skills-cat-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                            <h3 class="skills-cat-title">Databases</h3>
+                        </div>
+                        <div class="skills-list-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Core CS -->
+                    <div class="skills-category glassmorphism reveal-up">
+                        <div class="skills-header">
+                            <svg class="skills-cat-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                            <h3 class="skills-cat-title">Core CS</h3>
+                        </div>
+                        <div class="skills-list-tags">
+                            <span class="skill-tag">DSA</span>
+                            <span class="skill-tag">OOPS</span>
+                            <span class="skill-tag">DBMS</span>
+                            <span class="skill-tag">Operating Systems</span>
+                            <span class="skill-tag">Computer Networks</span>
+                            <span class="skill-tag">Computer Architecture</span>
+                            <span class="skill-tag">TOC</span>
+                        </div>
+                    </div>
+
+                    <!-- Data Science & AI -->
+                    <div class="skills-category glassmorphism reveal-up">
+                        <div class="skills-header">
+                            <svg class="skills-cat-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l2-9 5 18 3-10h6"></path></svg>
+                            <h3 class="skills-cat-title">Data Science</h3>
+                        </div>
+                        <div class="skills-list-tags">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Data Analysis</span>
+                            <span class="skill-tag">Statistics</span>
+                            <span class="skill-tag">Computer Vision</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Domain -->
+                    <div class="skills-category glassmorphism reveal-up">
+                        <div class="skills-header">
+                            <svg class="skills-cat-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                            <h3 class="skills-cat-title">Tools</h3>
+                        </div>
+                        <div class="skills-list-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 4. PROJECTS SECTION -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-gradient reveal-up">Featured Projects</h2>
+                
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: DR-Carys -->
+                    <div class="project-card glassmorphism reveal-up" id="project-dr-carys">
+                        <div class="project-glow"></div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                <div class="project-links">
+                                    <a href="https://github.com/jagan-lakshmankumar/StructurAware-RasterVector-Routing" target="_blank" rel="noopener noreferrer" class="proj-link-icon" aria-label="GitHub Repository for DR-Carys">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <h3 class="project-title text-glow">DR-Carys: Disaster Management</h3>
+                            <p class="project-description">
+                                Structure Aware Raster-Vector Integration for Post-Landslide Assessment for Routing. Implementing post-landslide disaster management system using multiclass semantic segmentation, remote-sensing, and graph-based routing.
+                            </p>
+                            
+                            <div class="project-tech-badges">
+                                <span class="tech-badge">Deep Learning</span>
+                                <span class="tech-badge">Computer Vision</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Graph Routing</span>
+                                <span class="tech-badge">GIS</span>
+                            </div>
+                            
+                            <div class="project-card-footer">
+                                <a href="https://github.com/jagan-lakshmankumar/StructurAware-RasterVector-Routing" target="_blank" rel="noopener noreferrer" class="btn-card-primary">GitHub Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: PathCarys -->
+                    <div class="project-card glassmorphism reveal-up" id="project-path-carys">
+                        <div class="project-glow"></div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                <div class="project-links">
+                                    <a href="https://github.com/jagan-lakshmankumar/PathCarys-PlacementPortal" target="_blank" rel="noopener noreferrer" class="proj-link-icon" aria-label="GitHub Repository for PathCarys">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <h3 class="project-title text-glow">PathCarys</h3>
+                            <p class="project-description">
+                                A feature-rich Placement Management Portal built to streamline campus placement routines. Implements role-based access management, student registrations, application pipelines, and administrative reporting dashboards.
+                            </p>
+                            
+                            <div class="project-tech-badges">
+                                <span class="tech-badge">Flask</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">SQLAlchemy</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                            </div>
+                            
+                            <div class="project-card-footer">
+                                <a href="https://github.com/jagan-lakshmankumar/PathCarys-PlacementPortal" target="_blank" rel="noopener noreferrer" class="btn-card-primary">GitHub Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: PlayCarys -->
+                    <div class="project-card glassmorphism reveal-up" id="project-play-carys">
+                        <div class="project-glow"></div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                <div class="project-links">
+                                    <a href="https://github.com/IIIT-Sricity-FSD-2024-2028/29_Playcarys" target="_blank" rel="noopener noreferrer" class="proj-link-icon" aria-label="GitHub Repository for PlayCarys">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <h3 class="project-title text-glow">PlayCarys</h3>
+                            <p class="project-description">
+                                Full stack online multiplayer game management platform. Coordinated module-level development, integrated CRUD operations and role-based workflows using NestJS. Designed to manage players, tournaments, and gaming sessions.
+                            </p>
+                            
+                            <div class="project-tech-badges">
+                                <span class="tech-badge">NestJS</span>
+                                <span class="tech-badge">NodeJS</span>
+                                <span class="tech-badge">HTML/CSS/JS</span>
+                                <span class="tech-badge">MySQL</span>
+                            </div>
+                            
+                            <div class="project-card-footer">
+                                <a href="https://github.com/IIIT-Sricity-FSD-2024-2028/29_Playcarys" target="_blank" rel="noopener noreferrer" class="btn-card-primary">GitHub Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 5. EDUCATION SECTION -->
+        <section id="education" class="education-section section-padding section-bg-alt">
+            <div class="container">
+                <h2 class="section-title text-gradient reveal-up">Education</h2>
+                
+                <div class="timeline-wrapper">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- IIIT Sri City Card -->
+                    <div class="timeline-item reveal-left">
+                        <div class="timeline-dot text-glow"></div>
+                        <div class="timeline-card glassmorphism">
+                            <div class="card-glow-element"></div>
+                            <div class="timeline-header">
+                                <div class="edu-entity">
+                                    <h3 class="edu-degree">B.Tech in Computer Science & Engineering</h3>
+                                    <span class="edu-school">Indian Institute of Information Technology (IIIT), Sri City</span>
+                                </div>
+                                <div class="edu-meta">
+                                    <span class="edu-duration">2024 - 2028</span>
+                                    <span class="edu-grade text-gradient">CGPA: 7.94 / 10</span>
+                                </div>
+                            </div>
+                            <div class="edu-body">
+                                <p>Concurrently pursuing B.Tech CSE studies alongside BS at IIT Madras, focusing on software engineering paradigms, architecture design, and algorithm optimization.</p>
+                                <ul class="edu-highlights">
+                                    <li>Focus areas: Data Structures & Algorithms, Database Systems, Computer Networks.</li>
+                                    <li>Relevant research: Dynamic routing graph optimizations.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IIT Madras Card -->
+                    <div class="timeline-item timeline-item-right reveal-right">
+                        <div class="timeline-dot text-glow"></div>
+                        <div class="timeline-card glassmorphism">
+                            <div class="card-glow-element"></div>
+                            <div class="timeline-header">
+                                <div class="edu-entity">
+                                    <h3 class="edu-degree">BS in Data Science & Applications</h3>
+                                    <span class="edu-school">Indian Institute of Technology (IIT), Madras</span>
+                                </div>
+                                <div class="edu-meta">
+                                    <span class="edu-duration">2024 - 2028</span>
+                                    <span class="edu-grade text-gradient">CGPA: 7.26 / 10</span>
+                                </div>
+                            </div>
+                            <div class="edu-body">
+                                <p>Concurrently pursuing undergraduate BS studies alongside B.Tech at IIIT Sri City, focused heavily on industrial machine learning models, statistical data analysis, and advanced algorithmic computations.</p>
+                                <ul class="edu-highlights">
+                                    <li>Focus areas: Machine Learning, Deep Learning, Python for Data Science, Statistics.</li>
+                                    <li>Diploma Level (Current).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12th Grade Card -->
+                    <div class="timeline-item reveal-left">
+                        <div class="timeline-dot text-glow"></div>
+                        <div class="timeline-card glassmorphism">
+                            <div class="card-glow-element"></div>
+                            <div class="timeline-header">
+                                <div class="edu-entity">
+                                    <h3 class="edu-degree">12th Grade (Intermediate)</h3>
+                                    <span class="edu-school">Tirumala Junior College</span>
+                                </div>
+                                <div class="edu-meta">
+                                    <span class="edu-duration">Graduated 2024</span>
+                                    <span class="edu-grade text-gradient">Percentage: 98%</span>
+                                </div>
+                            </div>
+                            <div class="edu-body">
+                                <p>Completed higher secondary education with a stellar academic record, building a strong foundation in Mathematics, Physics, and Chemistry.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10th Grade Card -->
+                    <div class="timeline-item timeline-item-right reveal-right">
+                        <div class="timeline-dot text-glow"></div>
+                        <div class="timeline-card glassmorphism">
+                            <div class="card-glow-element"></div>
+                            <div class="timeline-header">
+                                <div class="edu-entity">
+                                    <h3 class="edu-degree">10th Grade (Secondary)</h3>
+                                    <span class="edu-school">Tirumala Proactive School</span>
+                                </div>
+                                <div class="edu-meta">
+                                    <span class="edu-duration">Graduated 2022</span>
+                                    <span class="edu-grade text-gradient">Percentage: 94.8%</span>
+                                </div>
+                            </div>
+                            <div class="edu-body">
+                                <p>Excelled in secondary education with an exceptional foundational focus on analytical problem-solving and sciences.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Certifications -->
+                <div class="certifications-container reveal-up" style="margin-top: 4rem;">
+                    <h3 class="text-gradient" style="font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center;">Certifications & Achievements</h3>
+                    <div class="cert-grid" style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                        <div class="cert-card glassmorphism" style="padding: 1.5rem; border-radius: 12px;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                                <h4 style="color: var(--text); font-weight: 600; font-size: 1.1rem;">IIT Madras BS Foundation Level</h4>
+                            </div>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Foundation Level Certificate in Data Science and Applications from IIT Madras.</p>
+                        </div>
+                        <div class="cert-card glassmorphism" style="padding: 1.5rem; border-radius: 12px;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <h4 style="color: var(--text); font-weight: 600; font-size: 1.1rem;">Team Leadership</h4>
+                            </div>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Successfully led a team of 6 members to develop a full stack online multiplayer game management system.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 6. CONTACT SECTION -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-gradient reveal-up">Contact Me</h2>
+                
+                <div class="contact-grid">
+                    
+                    <!-- Contact Details / Info Card -->
+                    <div class="contact-info-card glassmorphism reveal-left">
+                        <div class="card-glow-element"></div>
+                        <h3 class="info-card-title text-glow">Let's Connect</h3>
+                        <p class="info-card-text">
+                            I am actively looking for internship and career opportunities in Full Stack Development, Software Engineering, and AI/Machine Learning. If you have a project or just want to say hi, feel free to reach out!
+                        </p>
+                        
+                        <div class="contact-links-list">
+                            <div class="contact-link-item" id="contact-name-item" style="cursor: default; pointer-events: none;">
+                                <span class="contact-icon-wrapper" style="background: rgba(0, 242, 254, 0.15); color: var(--accent); border-color: rgba(0, 242, 254, 0.3);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                </span>
+                                <span class="contact-link-label" style="font-weight: 600; color: var(--text-primary);">PRAGALLAPATI J N SAI VEERA LAKSHMANKUMAR</span>
+                            </div>
+
+                            <a href="mailto:jagansaispj@gmail.com" class="contact-link-item" id="contact-email-link">
+                                <span class="contact-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </span>
+                                <span class="contact-link-label">jagansaispj@gmail.com</span>
+                            </a>
+
+                            <a href="mailto:jnsaiveeralakshmankumar.p24@iiits.in" class="contact-link-item" id="contact-college-email-link">
+                                <span class="contact-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </span>
+                                <span class="contact-link-label">jnsaiveeralakshmankumar.p24@iiits.in</span>
+                            </a>
+                            
+                            <a href="https://github.com/jagan-lakshmankumar" target="_blank" rel="noopener noreferrer" class="contact-link-item" id="contact-github-link">
+                                <span class="contact-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </span>
+                                <span class="contact-link-label">github.com/jagan-lakshmankumar</span>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/jagan-pragallapati-b6b2a5320" target="_blank" rel="noopener noreferrer" class="contact-link-item" id="contact-linkedin-link">
+                                <span class="contact-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                </span>
+                                <span class="contact-link-label">linkedin.com/in/jagan-pragallapati-b6b2a5320</span>
+                            </a>
+
+                            <a href="https://leetcode.com/u/jagansaispj/" target="_blank" rel="noopener noreferrer" class="contact-link-item" id="contact-leetcode-link">
+                                <span class="contact-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                                </span>
+                                <span class="contact-link-label">leetcode.com/u/jagansaispj/</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card glassmorphism reveal-right">
+                        <div class="card-glow-element"></div>
+                        <h3 class="form-title text-glow">Send a Message</h3>
+                        
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <input type="text" id="contact-name" name="name" required placeholder=" " class="form-input">
+                                <label for="contact-name" class="form-label">Full Name</label>
+                                <span class="form-error-msg" id="name-error">Please enter your name</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="contact-email" name="email" required placeholder=" " class="form-input">
+                                <label for="contact-email" class="form-label">Email Address</label>
+                                <span class="form-error-msg" id="email-error">Please enter a valid email</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea id="contact-message" name="message" required placeholder=" " class="form-input form-textarea"></textarea>
+                                <label for="contact-message" class="form-label">Your Message</label>
+                                <span class="form-error-msg" id="message-error">Please enter your message</span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-contact">
+                                <span>Send Message</span>
+                                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="footer-copy">Designed & Developed by <span class="text-gradient font-bold">Jagan Pragallapati</span></p>
+            <a href="#home" class="btn-top-scroll" aria-label="Scroll back to top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- ==================== RESUME MODAL ==================== -->
+    <div id="resume-modal" class="modal-container">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">My Resume</h3>
+                <button class="modal-close-btn" id="close-resume-modal" aria-label="Close Resume Modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe src="assets/images/Jagan_Resume_Draft.pdf" class="resume-iframe" title="Jagan's Resume"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== TOAST NOTIFICATION CONTAINER ==================== -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</body>
+</html>
